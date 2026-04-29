@@ -29,11 +29,11 @@ const items = [
 export default function Stats() {
   return (
     <section className="relative py-24 md:py-36">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+      <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-5">
             <SectionLabel>By the numbers</SectionLabel>
-            <h2 className="mt-6 font-sans font-semibold text-[clamp(2.2rem,5.6vw,5.75rem)] leading-[1] tracking-[-0.04em]">
+            <h2 className="mt-6 font-avaleigh font-bold text-[clamp(2.2rem,6.2vw,8.5rem)] leading-[1] tracking-[-0.02em]">
               Small portfolio, <br />
               <span className="italic text-foreground/40">sharp practice.</span>
             </h2>

@@ -4,13 +4,13 @@ import Reveal, { RevealText } from "@/components/reveal";
 export default function Mission() {
   return (
     <section className="relative py-24 md:py-36">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+      <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-3">
             <SectionLabel>Approach</SectionLabel>
           </div>
           <div className="md:col-span-9">
-            <h2 className="font-sans font-semibold text-[clamp(2.4rem,5.6vw,5.75rem)] leading-[1] tracking-[-0.04em]">
+            <h2 className="font-avaleigh font-bold text-[clamp(2.4rem,6.2vw,8.5rem)] leading-[1] tracking-[-0.02em]">
               <RevealText
                 as="span"
                 text="I design with focus, intention, and"

@@ -21,13 +21,13 @@ export default function BuiltDifferent() {
 
   return (
     <section className="relative bg-invert-bg text-invert-fg overflow-hidden">
-      <div className="mx-auto max-w-[1400px] px-5 py-24 md:px-[30px] md:py-36">
+      <div className="mx-auto max-w-[1640px] px-5 py-24 md:px-[30px] 2xl:px-[44px] md:py-36">
         <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.22em] text-white/40">
           <span>(How I work)</span>
           <span>Process · 2026</span>
         </div>
 
-        <h2 className="mt-12 font-sans font-semibold text-[clamp(2.6rem,8vw,8rem)] leading-[0.95] tracking-[-0.04em] md:mt-16">
+        <h2 className="mt-12 font-avaleigh font-bold text-[clamp(2.6rem,8vw,8rem)] leading-[0.95] tracking-[-0.02em] md:mt-16">
           <span className="block">
             <span className="relative inline-block overflow-hidden align-baseline">
               <motion.span

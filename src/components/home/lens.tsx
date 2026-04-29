@@ -15,39 +15,39 @@ type Frame = {
 
 const frames: Frame[] = [
   {
-    src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=80&auto=format&fit=crop",
-    caption: "Brutalist façade",
-    place: "Marseille, FR",
+    src: "/photography/01-flatiron.jpg",
+    caption: "Fuller proportions",
+    place: "Flatiron, NYC",
     aspect: "aspect-[4/5]",
   },
   {
-    src: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80&auto=format&fit=crop",
-    caption: "Soft horizon",
-    place: "Tuscany, IT",
+    src: "/photography/02-arches.jpg",
+    caption: "Three rows of arches",
+    place: "Soho, NYC",
     aspect: "aspect-[4/5]",
   },
   {
-    src: "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1200&q=80&auto=format&fit=crop",
-    caption: "Vaulted light",
-    place: "Lisbon, PT",
+    src: "/photography/06-corner-sky.jpg",
+    caption: "Corner · sky",
+    place: "Tribeca, NYC",
     aspect: "aspect-[4/5]",
   },
   {
-    src: "https://images.unsplash.com/photo-1465447142348-e9952c393450?w=1200&q=80&auto=format&fit=crop",
-    caption: "Long valley",
-    place: "Iceland",
+    src: "/photography/04-cast-iron.jpg",
+    caption: "Cast-iron rhythm",
+    place: "Soho, NYC",
     aspect: "aspect-[4/5]",
   },
   {
-    src: "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1200&q=80&auto=format&fit=crop",
-    caption: "Concrete grid",
-    place: "Tokyo, JP",
+    src: "/photography/03-arched-facade.jpg",
+    caption: "Arch · negative space",
+    place: "Tribeca, NYC",
     aspect: "aspect-[4/5]",
   },
   {
-    src: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80&auto=format&fit=crop",
-    caption: "Stillness",
-    place: "Banff, CA",
+    src: "/photography/10-storefront-night.jpg",
+    caption: "Storefront after dark",
+    place: "Soho, NYC",
     aspect: "aspect-[4/5]",
   },
 ];
@@ -55,11 +55,11 @@ const frames: Frame[] = [
 export default function Lens() {
   return (
     <section className="relative py-24 md:py-32">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+      <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-5">
             <SectionLabel>Lens</SectionLabel>
-            <h2 className="mt-6 font-sans font-semibold text-[clamp(2.2rem,5vw,5rem)] leading-[1] tracking-[-0.04em]">
+            <h2 className="mt-6 font-avaleigh font-bold text-[clamp(2.2rem,5.6vw,7.5rem)] leading-[1] tracking-[-0.02em]">
               <RevealText as="span" text="Photography" />
               <br />
               <span className="italic text-foreground/40">
@@ -69,15 +69,15 @@ export default function Lens() {
           </div>
           <div className="md:col-span-7 md:pt-4">
             <p className="max-w-xl text-[15px] leading-[1.7] text-foreground/80 md:text-[16px]">
-              I shoot buildings and landscapes the way I draw layouts — looking
-              for a quiet grid, a confident horizon, the one moment a façade
-              decides to speak. The frames below are where my eye trains; every
-              UI I make borrows something from them.
+              I walk New York with a camera the same way I open a sketchbook —
+              looking for the quiet grid, the carved ornament, the one moment a
+              cast-iron façade decides to speak. The frames below are from an
+              ongoing archive shot in Soho, Tribeca, and the Flatiron district.
             </p>
             <p className="mt-5 max-w-xl text-[14px] leading-[1.65] text-muted">
-              Architecture teaches hierarchy. Landscapes teach restraint. Both
-              show up in my interfaces — in the negative space, the rhythm of
-              the type, the patience of the scroll.
+              Architecture teaches hierarchy. Repetition teaches rhythm. Both
+              show up in the interfaces I design — in the negative space, the
+              column rules, the patience of the scroll.
             </p>
           </div>
         </div>

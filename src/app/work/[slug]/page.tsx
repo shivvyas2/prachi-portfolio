@@ -25,7 +25,7 @@ export default async function WorkDetail({
   return (
     <>
       <section className="pt-32 pb-12 md:pt-40">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <Link
             href="/work"
             className="inline-flex items-center gap-2 text-[13px] text-muted hover:text-foreground"
@@ -41,7 +41,7 @@ export default async function WorkDetail({
             </span>
           </div>
 
-          <h1 className="mt-6 font-sans font-semibold text-[clamp(2.8rem,8vw,8.5rem)] leading-[0.92] tracking-[-0.045em]">
+          <h1 className="mt-6 font-avaleigh font-bold text-[clamp(2.8rem,8.4vw,12rem)] leading-[0.92] tracking-[-0.02em]">
             {w.title}
           </h1>
 
@@ -56,7 +56,7 @@ export default async function WorkDetail({
 
       {/* Hero image board */}
       <section className="pb-16 md:pb-24">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <div
             className={`relative overflow-hidden rounded-[24px] ${w.bg} px-6 py-10 md:px-12 md:py-14`}
           >
@@ -72,7 +72,7 @@ export default async function WorkDetail({
                     fill
                     priority={idx === 0}
                     sizes="(min-width:768px) 30vw, 90vw"
-                    className="object-cover object-top"
+                    className="object-contain"
                   />
                 </div>
               ))}
@@ -83,7 +83,7 @@ export default async function WorkDetail({
 
       {/* Overview */}
       <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-12">
             <div className="md:col-span-3">
               <SectionLabel>Overview</SectionLabel>
@@ -101,7 +101,7 @@ export default async function WorkDetail({
               )}
             </div>
             <div className="md:col-span-9">
-              <p className="font-sans text-[clamp(1.6rem,3vw,2.6rem)] font-medium leading-[1.2] tracking-[-0.02em]">
+              <p className="font-sans text-[clamp(1.6rem,3.2vw,3.6rem)] font-medium leading-[1.2] tracking-[-0.02em]">
                 {w.intro}
               </p>
               <p className="mt-8 max-w-2xl text-[15px] leading-[1.7] text-muted">
@@ -115,7 +115,7 @@ export default async function WorkDetail({
       {/* Sections / chapters */}
       {w.sections && w.sections.length > 0 && (
         <section className="pb-24 md:pb-32">
-          <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+          <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
             <ol className="divide-y divide-border border-y border-border">
               {w.sections.map((s) => (
                 <li
@@ -126,7 +126,7 @@ export default async function WorkDetail({
                     {s.label}
                   </div>
                   <div className="md:col-span-9">
-                    <h3 className="font-sans font-semibold text-[clamp(1.8rem,3.6vw,3.25rem)] leading-[1.05] tracking-[-0.03em]">
+                    <h3 className="font-avaleigh font-bold text-[clamp(1.8rem,3.8vw,4.5rem)] leading-[1.05] tracking-[-0.02em]">
                       {s.heading}
                     </h3>
                     <p className="mt-6 max-w-2xl text-[15px] leading-[1.7] text-foreground/80">
@@ -143,7 +143,7 @@ export default async function WorkDetail({
       {/* Extended gallery (when more than 3 images) */}
       {gallery.length > 3 && (
         <section className="pb-24">
-          <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+          <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
             <SectionLabel>Gallery</SectionLabel>
             <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
               {gallery.slice(3).map((img, idx) => (
@@ -156,7 +156,7 @@ export default async function WorkDetail({
                     alt={img.alt}
                     fill
                     sizes="(min-width:768px) 45vw, 90vw"
-                    className="object-cover object-top"
+                    className="object-contain"
                   />
                 </div>
               ))}
@@ -167,7 +167,7 @@ export default async function WorkDetail({
 
       {/* Next project */}
       <section className="border-t border-border py-16 md:py-20">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <Link
             href={`/work/${next.slug}`}
             className="group flex items-center justify-between gap-6"
@@ -176,7 +176,7 @@ export default async function WorkDetail({
               <div className="text-[11px] uppercase tracking-[0.22em] text-muted">
                 Next project
               </div>
-              <div className="mt-3 font-sans text-4xl font-semibold tracking-[-0.03em] md:text-6xl">
+              <div className="mt-3 font-sans text-4xl font-semibold tracking-[-0.02em] md:text-6xl">
                 {next.title}
               </div>
               <div className="mt-2 text-[12px] uppercase tracking-[0.22em] text-muted">

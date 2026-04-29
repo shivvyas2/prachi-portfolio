@@ -33,11 +33,11 @@ const steps = [
 export default function Process() {
   return (
     <section className="relative py-24 md:py-36">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+      <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div>
             <SectionLabel>Process</SectionLabel>
-            <h2 className="mt-6 font-sans font-semibold text-[clamp(2.2rem,5.6vw,5.75rem)] leading-[1] tracking-[-0.04em]">
+            <h2 className="mt-6 font-avaleigh font-bold text-[clamp(2.2rem,6.2vw,8.5rem)] leading-[1] tracking-[-0.02em]">
               How a project <br />
               <span className="italic text-foreground/40">moves through me.</span>
             </h2>

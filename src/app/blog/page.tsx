@@ -14,7 +14,7 @@ export default function BlogIndexPage() {
         subtitle="Field notes on brand, design systems, and the messy work of shipping ambitious products."
       />
       <section className="pb-32">
-        <div className="mx-auto max-w-[1320px] px-6">
+        <div className="mx-auto max-w-[1560px] px-6">
           <ul className="grid grid-cols-1 gap-y-12 md:grid-cols-12 md:gap-x-6">
             {posts.map((p, i) => (
               <Reveal
@@ -43,7 +43,7 @@ export default function BlogIndexPage() {
                         {p.date} · {p.category}
                       </div>
                       <h3
-                        className={`mt-3 font-display ${
+                        className={`mt-3 font-avaleigh font-bold ${
                           i === 0 ? "text-4xl md:text-6xl" : "text-2xl md:text-3xl"
                         } leading-[1.05]`}
                       >

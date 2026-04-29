@@ -5,13 +5,13 @@ import { RevealText } from "@/components/reveal";
 export default function CTA() {
   return (
     <section className="relative">
-      <div className="mx-auto max-w-[1400px] px-5 py-28 md:px-[30px] md:py-44">
+      <div className="mx-auto max-w-[1640px] px-5 py-28 md:px-[30px] 2xl:px-[44px] md:py-44">
         <div className="mb-10 flex items-center justify-between text-[11px] uppercase tracking-[0.22em] text-muted md:mb-14">
           <span>(Get in touch)</span>
           <span>2026 — New York, USA</span>
         </div>
         <Link href="/contact" className="group block">
-          <h2 className="font-sans font-semibold text-[clamp(2.4rem,8.4vw,8.5rem)] leading-[0.92] tracking-[-0.045em]">
+          <h2 className="font-avaleigh font-bold text-[clamp(2.4rem,8.6vw,12rem)] leading-[0.92] tracking-[-0.02em]">
             <RevealText
               as="span"
               text="Have a brief,"

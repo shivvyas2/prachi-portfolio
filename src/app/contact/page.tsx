@@ -1,6 +1,6 @@
 import PageHero from "@/components/page-hero";
 import SectionLabel from "@/components/section-label";
-import { ArrowUpRight, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 
 const faq = [
   {
@@ -31,7 +31,7 @@ export default function ContactPage() {
       />
 
       <section className="pb-32">
-        <div className="mx-auto max-w-[1320px] px-6">
+        <div className="mx-auto max-w-[1560px] px-6">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
             <form className="md:col-span-7 grid grid-cols-1 gap-3 rounded-3xl border border-border bg-card p-6 sm:grid-cols-2 md:p-10">
               <Field label="Name" placeholder="Your name" />
@@ -65,23 +65,8 @@ export default function ContactPage() {
             <div className="md:col-span-5 space-y-3">
               <Detail
                 icon={<Mail className="size-4" />}
-                label="New projects / Business"
-                value="contact@monostudio.io"
-              />
-              <Detail
-                icon={<Mail className="size-4" />}
-                label="General inquiries"
-                value="info@monostudio.io"
-              />
-              <Detail
-                icon={<Phone className="size-4" />}
-                label="Phone"
-                value="(+1) 930 046 720"
-              />
-              <Detail
-                icon={<MapPin className="size-4" />}
-                label="Location"
-                value="Roc Boronat 112, Floor 3 · Door 2 (08018) Barcelona, Spain"
+                label="Email"
+                value="patelprachi670@gmail.com"
               />
             </div>
           </div>
@@ -89,18 +74,18 @@ export default function ContactPage() {
       </section>
 
       <section className="pb-32">
-        <div className="mx-auto max-w-[1320px] px-6">
+        <div className="mx-auto max-w-[1560px] px-6">
           <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
             <div className="md:col-span-4">
               <SectionLabel>FAQ</SectionLabel>
-              <h2 className="mt-6 font-display text-5xl md:text-6xl leading-[0.95]">
+              <h2 className="mt-6 font-avaleigh font-bold text-5xl md:text-6xl leading-[0.95]">
                 Common questions.
               </h2>
             </div>
             <ul className="md:col-span-8 divide-y divide-border border-y border-border">
               {faq.map((item) => (
                 <li key={item.q} className="py-7">
-                  <div className="font-display text-2xl">{item.q}</div>
+                  <div className="font-avaleigh font-bold text-2xl">{item.q}</div>
                   <p className="mt-3 max-w-2xl text-sm text-muted">{item.a}</p>
                 </li>
               ))}

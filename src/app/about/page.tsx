@@ -71,9 +71,9 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-16 md:pt-44 md:pb-24">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <SectionLabel>About</SectionLabel>
-          <h1 className="mt-6 font-sans text-[clamp(2.6rem,7.5vw,7.5rem)] font-bold leading-[0.92] tracking-[-0.04em]">
+          <h1 className="mt-6 font-avaleigh text-[clamp(2.6rem,8.5vw,11rem)] font-bold leading-[0.92] tracking-[-0.02em]">
             <RevealText as="span" text="Hi, I'm Prachi —" />
             <br />
             <span className="text-foreground/40">
@@ -119,7 +119,7 @@ export default function AboutPage() {
 
       {/* Portrait + body paragraph */}
       <section className="pb-20 md:pb-28">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-10">
             <Reveal className="md:col-span-7 md:order-2">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-foreground/5">
@@ -164,89 +164,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Principles */}
-      <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
-            <div className="md:col-span-4">
-              <SectionLabel>Principles</SectionLabel>
-              <h2 className="mt-6 font-sans font-semibold text-[clamp(2rem,4.4vw,4.5rem)] leading-[1.02] tracking-[-0.03em]">
-                How I work, <br />
-                <span className="text-foreground/40">most days.</span>
-              </h2>
-            </div>
-            <ul className="md:col-span-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {principles.map((v) => (
-                <li
-                  key={v.n}
-                  className="flex flex-col rounded-3xl border border-border bg-card p-7"
-                >
-                  <div className="flex items-baseline justify-between">
-                    <span className="font-sans text-2xl font-semibold tracking-tight">
-                      {v.t}
-                    </span>
-                    <span className="font-mono text-xs text-muted">
-                      ({v.n})
-                    </span>
-                  </div>
-                  <p className="mt-4 text-sm leading-relaxed text-muted">
-                    {v.d}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
-            <div className="md:col-span-4">
-              <SectionLabel>Path</SectionLabel>
-              <h2 className="mt-6 font-sans font-semibold text-[clamp(2rem,4.4vw,4.5rem)] leading-[1.02] tracking-[-0.03em]">
-                A short <br />
-                <span className="text-foreground/40">trajectory.</span>
-              </h2>
-              <p className="mt-6 max-w-sm text-sm text-muted">
-                Some of the moments that pointed me toward the work I make
-                today.
-              </p>
-            </div>
-            <ol className="md:col-span-8 divide-y divide-border border-y border-border">
-              {timeline.map((t, i) => (
-                <Reveal
-                  as="li"
-                  key={t.year}
-                  delay={i * 0.05}
-                  className="grid grid-cols-1 items-baseline gap-4 py-7 md:grid-cols-12"
-                >
-                  <span className="md:col-span-3 font-mono text-xs uppercase tracking-[0.18em] text-muted">
-                    {t.year}
-                  </span>
-                  <div className="md:col-span-9">
-                    <div className="font-sans text-2xl font-semibold tracking-tight md:text-3xl">
-                      {t.title}
-                    </div>
-                    <p className="mt-2 max-w-xl text-sm text-muted">
-                      {t.detail}
-                    </p>
-                  </div>
-                </Reveal>
-              ))}
-            </ol>
-          </div>
-        </div>
-      </section>
-
       {/* Toolkit + currently learning */}
       <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
             <div className="md:col-span-4">
               <SectionLabel>Toolkit</SectionLabel>
-              <h2 className="mt-6 font-sans font-semibold text-[clamp(2rem,4.4vw,4.5rem)] leading-[1.02] tracking-[-0.03em]">
+              <h2 className="mt-6 font-avaleigh font-bold text-[clamp(2rem,4.8vw,6.5rem)] leading-[1.02] tracking-[-0.02em]">
                 Tools <br />
                 <span className="text-foreground/40">in rotation.</span>
               </h2>
@@ -298,11 +222,87 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Principles */}
+      <section className="py-20 md:py-28">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <SectionLabel>Principles</SectionLabel>
+              <h2 className="mt-6 font-avaleigh font-bold text-[clamp(2rem,4.8vw,6.5rem)] leading-[1.02] tracking-[-0.02em]">
+                How I work, <br />
+                <span className="text-foreground/40">most days.</span>
+              </h2>
+            </div>
+            <ul className="md:col-span-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {principles.map((v) => (
+                <li
+                  key={v.n}
+                  className="flex flex-col rounded-3xl border border-border bg-card p-7"
+                >
+                  <div className="flex items-baseline justify-between">
+                    <span className="font-sans text-2xl font-semibold tracking-tight">
+                      {v.t}
+                    </span>
+                    <span className="font-mono text-xs text-muted">
+                      ({v.n})
+                    </span>
+                  </div>
+                  <p className="mt-4 text-sm leading-relaxed text-muted">
+                    {v.d}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="py-20 md:py-28">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <SectionLabel>Path</SectionLabel>
+              <h2 className="mt-6 font-avaleigh font-bold text-[clamp(2rem,4.8vw,6.5rem)] leading-[1.02] tracking-[-0.02em]">
+                A short <br />
+                <span className="text-foreground/40">trajectory.</span>
+              </h2>
+              <p className="mt-6 max-w-sm text-sm text-muted">
+                Some of the moments that pointed me toward the work I make
+                today.
+              </p>
+            </div>
+            <ol className="md:col-span-8 divide-y divide-border border-y border-border">
+              {timeline.map((t, i) => (
+                <Reveal
+                  as="li"
+                  key={t.year}
+                  delay={i * 0.05}
+                  className="grid grid-cols-1 items-baseline gap-4 py-7 md:grid-cols-12"
+                >
+                  <span className="md:col-span-3 font-mono text-xs uppercase tracking-[0.18em] text-muted">
+                    {t.year}
+                  </span>
+                  <div className="md:col-span-9">
+                    <div className="font-sans text-2xl font-semibold tracking-tight md:text-3xl">
+                      {t.title}
+                    </div>
+                    <p className="mt-2 max-w-xl text-sm text-muted">
+                      {t.detail}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+
       {/* Closing CTA */}
       <section className="pb-28 md:pb-40 pt-10">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <Link href="/contact" className="group block">
-            <h2 className="font-sans text-[clamp(2.4rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.04em]">
+            <h2 className="font-avaleigh text-[clamp(2.4rem,8vw,8rem)] font-bold leading-[0.9] tracking-[-0.02em]">
               <RevealText as="span" text="Have a brief," />{" "}
               <span className="text-foreground/40">
                 <RevealText as="span" text="a question," delay={0.25} />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import SmoothScroll from "@/components/smooth-scroll";
 import Nav from "@/components/nav";
@@ -24,6 +25,16 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
+const avaleigh = localFont({
+  variable: "--font-avaleigh",
+  display: "swap",
+  src: [
+    { path: "../../public/fonts/Avaleigh-Light.otf", weight: "300", style: "normal" },
+    { path: "../../public/fonts/Avaleigh-Regular.otf", weight: "400", style: "normal" },
+    { path: "../../public/fonts/Avaleigh-Bold.otf", weight: "700", style: "normal" },
+  ],
+});
+
 export const metadata: Metadata = {
   title: "Prachi Patel — Designer & Computer Science Student",
   description:
@@ -36,7 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${display.variable} ${mono.variable} h-full antialiased`}
+      className={`${inter.variable} ${display.variable} ${mono.variable} ${avaleigh.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">
         <SmoothScroll />

@@ -42,11 +42,11 @@ const items = [
 export default function Testimonials() {
   return (
     <section className="relative py-24 md:py-36">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+      <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
         <div className="mb-12 flex flex-col items-start justify-between gap-4 md:mb-16 md:flex-row md:items-end">
           <div>
             <SectionLabel>Kind words</SectionLabel>
-            <h2 className="mt-6 font-sans font-semibold text-[clamp(2rem,4.4vw,4.5rem)] leading-[1.05] tracking-[-0.035em]">
+            <h2 className="mt-6 font-avaleigh font-bold text-[clamp(2rem,4.8vw,6.5rem)] leading-[1.05] tracking-[-0.02em]">
               From mentors, <br />
               <span className="italic text-foreground/40">faculty, and friends.</span>
             </h2>
@@ -56,7 +56,7 @@ export default function Testimonials() {
           </span>
         </div>
 
-        <div className="-mx-5 overflow-x-auto px-5 pb-2 no-scrollbar md:-mx-[30px] md:px-[30px]">
+        <div className="-mx-5 overflow-x-auto px-5 pb-2 no-scrollbar md:-mx-[30px] md:px-[30px] 2xl:px-[44px]">
           <ul className="flex w-max gap-4">
             {items.map((t, i) => (
               <motion.li

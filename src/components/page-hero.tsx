@@ -12,9 +12,9 @@ export default function PageHero({
 }) {
   return (
     <section className="pt-40 pb-16 md:pt-52 md:pb-24">
-      <div className="mx-auto max-w-[1320px] px-6">
+      <div className="mx-auto max-w-[1560px] px-6">
         <SectionLabel>{eyebrow}</SectionLabel>
-        <h1 className="mt-6 font-display text-[clamp(2.8rem,8vw,8rem)] leading-[0.9] tracking-tight">
+        <h1 className="mt-6 font-avaleigh font-bold text-[clamp(2.8rem,8vw,11rem)] leading-[0.9] tracking-tight">
           <RevealText as="span" text={title} />
         </h1>
         {subtitle && (

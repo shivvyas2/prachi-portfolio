@@ -10,7 +10,7 @@ const links = [
   { label: "Home", href: "/" },
   { label: "Studio", href: "/about" },
   { label: "Work", href: "/work", badge: "(4)" },
-  { label: "News", href: "/blog" },
+  { label: "Photography", href: "/photography" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -32,7 +32,7 @@ export default function Nav() {
         scrolled ? "py-3" : "py-6"
       )}
     >
-      <div className="mx-auto flex max-w-[1380px] items-center justify-between gap-6 px-5 md:px-8">
+      <div className="mx-auto flex max-w-[1640px] items-center justify-between gap-6 px-5 md:px-8">
         <Link
           href="/"
           aria-label="Prachi Patel"

@@ -9,9 +9,9 @@ export default function WorkIndexPage() {
   return (
     <>
       <section className="pt-32 pb-12 md:pt-44">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <SectionLabel>Work</SectionLabel>
-          <h1 className="mt-6 font-sans font-semibold text-[clamp(2.6rem,7.5vw,7.5rem)] leading-[0.92] tracking-[-0.04em]">
+          <h1 className="mt-6 font-avaleigh font-bold text-[clamp(2.6rem,8.5vw,11rem)] leading-[0.92] tracking-[-0.02em]">
             <RevealText as="span" text="Selected work," />
             <br />
             <span className="text-foreground/40">
@@ -27,7 +27,7 @@ export default function WorkIndexPage() {
       </section>
 
       <section className="pb-32">
-        <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+        <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
           <ul className="flex flex-col gap-6 md:gap-8">
             {works.map((w, i) => (
               <Reveal as="li" key={w.slug} delay={i * 0.05}>
@@ -53,7 +53,7 @@ export default function WorkIndexPage() {
                             alt={img.alt}
                             fill
                             sizes="(min-width:768px) 22vw, 33vw"
-                            className="object-cover object-top transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                            className="object-contain transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
                           />
                         </div>
                       ))}

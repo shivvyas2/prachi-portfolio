@@ -11,7 +11,7 @@ export default function WorkShowcase() {
 
   return (
     <section className="relative py-24 md:py-32">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+      <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-12">
           <aside className="md:col-span-3">
             <div className="md:sticky md:top-32">
@@ -19,11 +19,11 @@ export default function WorkShowcase() {
                 <span className="size-1 rounded-full bg-foreground/60" />
                 (Portfolio 26©)
               </div>
-              <h2 className="mt-6 font-sans font-semibold text-[clamp(3rem,5.6vw,5.75rem)] leading-[0.95] tracking-[-0.04em]">
+              <h2 className="mt-6 font-avaleigh font-bold text-[clamp(3rem,6.2vw,8.5rem)] leading-[0.95] tracking-[-0.02em]">
                 Selected
                 <br />
                 <span className="italic text-foreground/40">Work</span>
-                <span className="ml-3 align-top text-base text-muted">
+                <span className="ml-3 align-top font-sans text-base font-normal text-muted">
                   (0{featured.length})
                 </span>
               </h2>
@@ -79,7 +79,7 @@ export default function WorkShowcase() {
                             alt={img.alt}
                             fill
                             sizes="(min-width:768px) 22vw, 33vw"
-                            className="object-cover object-top transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
+                            className="object-contain transition-transform duration-[1200ms] ease-out group-hover:scale-[1.03]"
                           />
                         </div>
                       ))}

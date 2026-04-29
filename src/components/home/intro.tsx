@@ -37,16 +37,16 @@ const exploring = [
 export default function Intro() {
   return (
     <section className="relative flex h-[100svh] min-h-[640px] flex-col overflow-hidden border-y border-border py-10 md:py-14">
-      <div className="mx-auto w-full max-w-[1400px] px-5 md:px-[30px]">
+      <div className="mx-auto w-full max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
         <div className="flex items-center justify-between gap-4 text-[11px] uppercase tracking-[0.22em] text-muted">
           <SectionLabel>About</SectionLabel>
           <span>2026 — Pace University</span>
         </div>
       </div>
 
-      <div className="mx-auto mt-8 grid w-full max-w-[1400px] flex-1 grid-cols-1 gap-8 px-5 md:mt-10 md:grid-cols-12 md:gap-10 md:px-[30px]">
+      <div className="mx-auto mt-8 grid w-full max-w-[1640px] flex-1 grid-cols-1 gap-8 px-5 md:mt-10 md:grid-cols-12 md:gap-10 md:px-[30px] 2xl:px-[44px]">
         <div className="md:col-span-8 flex flex-col">
-          <h5 className="font-sans text-[clamp(1.4rem,2.4vw,2.25rem)] font-medium leading-[1.25] tracking-[-0.015em] text-foreground/90">
+          <h5 className="font-avaleigh text-[clamp(1.4rem,2.5vw,3rem)] font-bold leading-[1.25] tracking-[-0.015em] text-foreground/90">
             Designer,{" "}
             <span className="text-foreground/45">computer-scientist,</span> and
             lifelong{" "}
@@ -71,7 +71,7 @@ export default function Intro() {
 
           <Reveal
             delay={0.25}
-            className="mt-6 grid grid-cols-1 gap-6 border-t border-border pt-5 md:mt-auto md:grid-cols-12 md:gap-8 md:pt-6"
+            className="mt-6 grid grid-cols-1 gap-6 border-t border-border pt-5 md:mt-10 md:grid-cols-12 md:gap-8 md:pt-8"
           >
             <ul className="md:col-span-8 flex flex-wrap items-center gap-x-2 gap-y-2">
               {tools.map((t) => (

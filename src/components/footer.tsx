@@ -7,7 +7,6 @@ const columns = [
       { label: "Home", href: "/" },
       { label: "Studio", href: "/about" },
       { label: "Work", href: "/work" },
-      { label: "Journal", href: "/blog" },
       { label: "Contact", href: "/contact" },
       { label: "Licensing", href: "#" },
     ],
@@ -22,20 +21,9 @@ const columns = [
     ],
   },
   {
-    title: "Journal",
-    links: [
-      { label: "Blog I", href: "/blog/one" },
-      { label: "Blog II", href: "/blog/two" },
-      { label: "Blog III", href: "/blog/three" },
-      { label: "All articles", href: "/blog" },
-    ],
-  },
-  {
     title: "Contact",
     links: [
-      { label: "hello@prachipatel.design", href: "mailto:hello@prachipatel.design" },
-      { label: "prachi@pace.edu", href: "mailto:prachi@pace.edu" },
-      { label: "(+1) 930 046 720", href: "tel:+19300467200" },
+      { label: "patelprachi670@gmail.com", href: "mailto:patelprachi670@gmail.com" },
     ],
   },
 ];
@@ -43,13 +31,13 @@ const columns = [
 export default function Footer() {
   return (
     <footer className="relative bg-invert-bg text-invert-fg">
-      <div className="mx-auto max-w-[1400px] px-5 pt-28 pb-12 md:px-[30px]">
+      <div className="mx-auto max-w-[1640px] px-5 pt-28 pb-12 md:px-[30px] 2xl:px-[44px]">
         <div className="grid grid-cols-1 gap-10 border-b border-white/10 pb-16 md:grid-cols-12">
           <div className="md:col-span-5">
             <div className="text-[11px] uppercase tracking-[0.22em] text-white/40">
               (Stay in touch)
             </div>
-            <h3 className="mt-6 font-sans font-semibold text-4xl leading-[1.02] tracking-[-0.035em] md:text-6xl">
+            <h3 className="mt-6 font-avaleigh font-bold text-4xl leading-[1.02] tracking-[-0.02em] md:text-6xl">
               New work, <br />
               <span className="italic text-white/40">straight to your inbox.</span>
             </h3>
@@ -106,11 +94,6 @@ export default function Footer() {
         </div>
       </div>
 
-      <div aria-hidden className="select-none overflow-hidden">
-        <div className="-mb-10 px-6 text-center font-sans font-bold leading-none tracking-[-0.05em] text-white/[0.06] text-[24vw]">
-          Prachi Patel
-        </div>
-      </div>
     </footer>
   );
 }

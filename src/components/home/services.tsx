@@ -36,11 +36,11 @@ const services = [
 export default function Services() {
   return (
     <section className="relative py-24 md:py-36">
-      <div className="mx-auto max-w-[1400px] px-5 md:px-[30px]">
+      <div className="mx-auto max-w-[1640px] px-5 md:px-[30px] 2xl:px-[44px]">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-4">
             <SectionLabel>What I do</SectionLabel>
-            <h2 className="mt-6 font-sans font-semibold text-[clamp(2.2rem,4.6vw,4.75rem)] leading-[1.02] tracking-[-0.035em]">
+            <h2 className="mt-6 font-avaleigh font-bold text-[clamp(2.2rem,5.2vw,7rem)] leading-[1.02] tracking-[-0.02em]">
               Five things <br />
               <span className="text-foreground/40">I keep coming back to.</span>
             </h2>

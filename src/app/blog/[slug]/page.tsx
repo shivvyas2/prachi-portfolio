@@ -34,7 +34,7 @@ export default async function BlogDetail({
           <div className="mt-10 text-[11px] uppercase tracking-[0.2em] text-muted">
             {p.date} · {p.category}
           </div>
-          <h1 className="mt-6 font-display text-[clamp(2.4rem,6vw,5.5rem)] leading-[0.95]">
+          <h1 className="mt-6 font-avaleigh font-bold text-[clamp(2.4rem,6.2vw,7.5rem)] leading-[0.95]">
             {p.title}
           </h1>
           <p className="mt-8 max-w-2xl text-lg text-muted">{p.excerpt}</p>
@@ -42,7 +42,7 @@ export default async function BlogDetail({
       </section>
 
       <section className="pb-12">
-        <div className="mx-auto max-w-[1320px] px-6">
+        <div className="mx-auto max-w-[1560px] px-6">
           <div className="relative aspect-[16/9] overflow-hidden rounded-[28px] bg-foreground/5">
             <Image
               src={p.src}
@@ -64,7 +64,7 @@ export default async function BlogDetail({
             down everything that exists, then aggressively prune until what
             remains feels honest and load-bearing.
           </p>
-          <h2 className="font-display text-3xl mt-12 mb-4 text-foreground">
+          <h2 className="font-avaleigh font-bold text-3xl mt-12 mb-4 text-foreground">
             Decisions over options
           </h2>
           <p>
@@ -73,7 +73,7 @@ export default async function BlogDetail({
             into the smallest set of decisions that the team can actually
             defend a year from now.
           </p>
-          <h2 className="font-display text-3xl mt-12 mb-4 text-foreground">
+          <h2 className="font-avaleigh font-bold text-3xl mt-12 mb-4 text-foreground">
             What we ship
           </h2>
           <p>
@@ -84,7 +84,7 @@ export default async function BlogDetail({
       </article>
 
       <section className="border-t border-border py-16">
-        <div className="mx-auto max-w-[1320px] px-6">
+        <div className="mx-auto max-w-[1560px] px-6">
           <Link
             href={`/blog/${next.slug}`}
             className="group flex items-center justify-between gap-6"
@@ -93,7 +93,7 @@ export default async function BlogDetail({
               <div className="text-xs uppercase tracking-[0.2em] text-muted">
                 Next article
               </div>
-              <div className="mt-3 font-display text-3xl md:text-5xl">
+              <div className="mt-3 font-avaleigh font-bold text-3xl md:text-5xl">
                 {next.title}
               </div>
             </div>
