@@ -124,8 +124,8 @@ export default function AboutPage() {
             <Reveal className="md:col-span-7 md:order-2">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-foreground/5">
                 <Image
-                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1600&q=80&auto=format&fit=crop"
-                  alt="Prachi at her desk"
+                  src="/profile.jpg"
+                  alt="Portrait of Prachi Patel"
                   fill
                   sizes="(min-width:768px) 60vw, 100vw"
                   className="object-cover"

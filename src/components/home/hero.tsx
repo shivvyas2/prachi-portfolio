@@ -62,12 +62,20 @@ export default function Hero() {
               A student designer exploring typography, layout, and visual
               communication — currently studying in New York.
             </p>
-            <Link
-              href="/contact"
-              className="group inline-flex w-fit items-center gap-2 rounded-full bg-foreground px-6 py-[15px] text-[15px] leading-[20px] text-background transition-transform hover:-translate-y-0.5"
-            >
-              Let&rsquo;s talk
-            </Link>
+            <div className="flex flex-wrap gap-2">
+              <Link
+                href="/contact"
+                className="group inline-flex w-fit items-center gap-2 rounded-full bg-foreground px-5 py-[13px] text-[14px] leading-[18px] text-background transition-transform hover:-translate-y-0.5"
+              >
+                Let&rsquo;s talk
+              </Link>
+              <Link
+                href="/print"
+                className="group inline-flex w-fit items-center gap-2 rounded-full border border-border bg-background/60 px-5 py-[13px] text-[14px] leading-[18px] text-foreground transition-colors hover:bg-foreground hover:text-background"
+              >
+                Portfolio · PDF
+              </Link>
+            </div>
           </motion.div>
         </div>
       </div>

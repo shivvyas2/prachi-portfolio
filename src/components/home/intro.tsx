@@ -103,8 +103,8 @@ export default function Intro() {
         <Reveal delay={0.2} className="md:col-span-4 flex flex-col gap-5">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[20px] bg-foreground/5">
             <Image
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1100&q=80&auto=format&fit=crop"
-              alt="Prachi"
+              src="/profile.jpg"
+              alt="Portrait of Prachi Patel"
               fill
               sizes="(min-width:768px) 33vw, 100vw"
               className="object-cover"

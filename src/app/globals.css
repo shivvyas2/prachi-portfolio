@@ -79,3 +79,17 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; }
 }
+
+@media print {
+  :root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+    --border: rgba(10, 10, 10, 0.18);
+  }
+  html, body { background: #ffffff !important; color: #0a0a0a !important; }
+  .marquee-track { animation: none !important; }
+  a { color: inherit !important; text-decoration: none !important; }
+  /* Encourage browsers to print background colors so cards keep their cream tints */
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  img { break-inside: avoid; }
+}
