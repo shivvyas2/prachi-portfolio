@@ -8,16 +8,6 @@ const columns = [
       { label: "Studio", href: "/about" },
       { label: "Work", href: "/work" },
       { label: "Contact", href: "/contact" },
-      { label: "Licensing", href: "#" },
-    ],
-  },
-  {
-    title: "Work",
-    links: [
-      { label: "Work I", href: "/work#one" },
-      { label: "Work II", href: "/work#two" },
-      { label: "Work III", href: "/work#three" },
-      { label: "All projects", href: "/work" },
     ],
   },
   {

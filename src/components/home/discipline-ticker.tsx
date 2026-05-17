@@ -5,7 +5,6 @@ const disciplines = [
   "Layout",
   "Code",
   "Photography",
-  "Editorial",
   "Brand",
   "Print",
   "Web",

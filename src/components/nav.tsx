@@ -8,7 +8,7 @@ import { cn } from "@/lib/cn";
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Studio", href: "/about" },
+  { label: "About", href: "/about" },
   { label: "Work", href: "/work", badge: "(4)" },
   { label: "Photography", href: "/photography" },
   { label: "Contact", href: "/contact" },

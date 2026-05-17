@@ -25,7 +25,6 @@ const tools = [
   "React",
   "HTML / CSS",
   "Type design",
-  "Editorial layout",
 ];
 
 const exploring = [

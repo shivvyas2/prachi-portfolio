@@ -122,7 +122,7 @@ export default function Lens() {
 
         <div className="mt-14 flex items-center justify-between border-t border-border pt-6 text-[11px] uppercase tracking-[0.22em] text-muted md:mt-20">
           <span>(Field notes · 2024 — 2026)</span>
-          <span>Shot on iPhone &amp; X100V</span>
+          <span>Shot on iPhone</span>
         </div>
       </div>
     </section>

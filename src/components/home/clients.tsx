@@ -1,18 +1,11 @@
 import Marquee from "@/components/marquee";
 
 const inspirations = [
-  "Pentagram",
-  "Studio Dumbar",
-  "Wolff Olins",
-  "Klim Type Foundry",
-  "Commercial Type",
-  "Grilli Type",
-  "Massimo Vignelli",
-  "Paula Scher",
-  "Jonathan Hoefler",
-  "Erik Spiekermann",
-  "It's Nice That",
-  "Are.na",
+  "Robert Wilson",
+  "Michael Lantz",
+  "Christelle Schraff",
+  "Nicole Cohen",
+  "Haik Sahakian",
 ];
 
 export default function Clients() {
@@ -23,7 +16,7 @@ export default function Clients() {
           <span className="size-1 rounded-full bg-foreground/60" />
           Currently inspired by
         </span>
-        <span>(Studios · Foundries · Designers)</span>
+        <span>(Professors)</span>
       </div>
       <Marquee>
         {inspirations.map((c) => (

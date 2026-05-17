@@ -29,18 +29,19 @@ const principles = [
 
 const timeline = [
   {
-    year: "2024 — Now",
+    year: "2022 — Now",
     title: "Pace University · New York",
-    detail: "B.A. Computer Science, minor in Graphic Design.",
+    detail:
+      "Switched from B.S. Computer Science to B.A. Computer Science with a minor in Graphic Design.",
   },
   {
-    year: "2023",
+    year: "2022",
     title: "Moved to New York",
     detail:
       "Relocated from India to study, surrounded by typography, museums, and the city's pace.",
   },
   {
-    year: "2022",
+    year: "2021",
     title: "Found design through code",
     detail:
       "Started exploring the visual side of technology — interfaces, posters, layouts — and never looked back.",
@@ -56,7 +57,7 @@ const timeline = [
 const stack = [
   { group: "Design", items: ["Figma", "InDesign", "Illustrator", "Photoshop"] },
   { group: "Code", items: ["HTML / CSS", "JavaScript", "React", "Python"] },
-  { group: "Interests", items: ["Typography", "Editorial layout", "Brand systems", "Motion"] },
+  { group: "Interests", items: ["Typography", "Brand systems", "Motion"] },
 ];
 
 const learning = [

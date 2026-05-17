@@ -7,8 +7,6 @@ import Lens from "@/components/home/lens";
 import BuiltDifferent from "@/components/home/built-different";
 import Services from "@/components/home/services";
 import Process from "@/components/home/pricing";
-import Stats from "@/components/home/stats";
-import Testimonials from "@/components/home/testimonials";
 import CTA from "@/components/home/cta";
 
 export default function HomePage() {
@@ -22,9 +20,7 @@ export default function HomePage() {
       <Lens />
       <BuiltDifferent />
       <Services />
-      <Stats />
       <Process />
-      <Testimonials />
       <CTA />
     </>
   );

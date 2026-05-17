@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import PIL; import cairosvg; print\\('both available'\\)\")",
+      "Bash(python3 -c \"import PIL\")",
+      "Bash(pip3 install *)",
+      "Bash(python3 *)",
+      "Bash(git checkout *)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --hide-scrollbars --default-background-color=00000000 --screenshot=/tmp/thumbsup.png --window-size=480,480 file:///tmp/thumbsup.html)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --hide-scrollbars --screenshot=/tmp/thumbsup.png --window-size=480,480 file:///tmp/thumbsup.html)"
+    ]
+  }
+}
